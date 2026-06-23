@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+	<listeners>
+		<listener class-name= "utilities.ExtentReportManager"/></listeners>
+	
+	 
+  <test thread-count="5" name="1">
+	 <parameter name="browser" value="1"></parameter>
+	 
+	  <groups>
+          <run>
+                  <include name="smoke" />
+            <!--  <include name="regression" />  -->
+             <!--  <include name="master" /> -->
+          </run>
+      </groups>
+    <classes>
+      <class name="testCases.zigWheels"/>
+    </classes> 
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="2">
+	 <parameter name="browser" value="2"></parameter>
+	 
+	  <groups>
+          <run>
+                  <include name="smoke" />
+            <!--  <include name="regression" />  -->
+             <!--  <include name="master" /> -->
+          </run>
+      </groups>
+    <classes>
+      <class name="testCases.zigWheels"/>
+    </classes> 
+  </test> 
+</suite> <!-- Suite -->
